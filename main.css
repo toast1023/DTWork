@@ -1,0 +1,42 @@
+body {
+	font-family: Chivo, sans-serif;
+}
+.sidebar {
+	/*background-color: gray;*/
+	width: 20%;
+}
+
+.content {
+	/*background-color: red;*/
+	width: 60%;
+	height: 50px;
+}
+.page-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.yellowlight {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #F5E486 65%);
+}
+.sidebar-trademark {
+	margin-top: 80px;
+	opacity: 40%;
+}
+.sidebar-links a {
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+}
+
+.page-title {
+	font-weight: 900;
+	font-size: 22px;
+	margin-bottom: 50px;
+}
+.vertical-line {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	margin-left: 40px;
+	margin-right: 40px;
+}
