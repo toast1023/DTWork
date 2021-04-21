@@ -1,14 +1,26 @@
 body {
 	font-family: Chivo, sans-serif;
-  position: relative;
-  height: auto;
-  min-height: 100% !important;
+	position: relative;
+	height: auto;
+	min-height: 100% !important;
+	background-color: #FFFDF1;
+	color: #3F3D3D;
 }
+
+/* SIDEBAR */
 .sidebar {
 	width: 10%;}
 
 .content {
 	width: 70%;
+}
+.page-title a {
+	text-decoration: none;
+	color: #3F3D3D;
+}
+.page-title a:hover {
+	text-decoration: underline;
+
 }
 .page-container {
 	display: flex;
@@ -16,9 +28,6 @@ body {
 	margin-top: 80px;
 }
 
-.yellowlight {
-	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #F5E486 65%);
-}
 .sidebar-trademark {
 	margin-top: 80px;
 	opacity: 40%;
@@ -41,6 +50,14 @@ body {
 	margin-right: 40px;
 }
 
+
+/* CONTENT */
+.yellowlight {
+	/*background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #F5E486 65%);*/
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FDDD5C 65%);
+
+}
+
 .row {
 	display: flex;
 	justify-content: space-between;
@@ -50,6 +67,7 @@ body {
 .photo-container {
 	width: 48%;
 	margin-bottom: 20px;
+	position: relative;
 	/*padding: 10px;*/
 }
 
@@ -65,4 +83,34 @@ body {
 .single-photo-container {
 	width: 100%;
 	margin-bottom: 20px;
+	position: relative;
+}
+
+.intro {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: justify;
+}
+
+.caption {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFDF1;
+	opacity: 90%;
+	padding: 10%;
+	box-sizing: border-box;
+}
+
+.photo-container:hover .caption, .single-photo-container:hover .caption {
+	visibility: visible;
+}
+
+.masthead {
+	opacity: 60%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
