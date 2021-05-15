@@ -12,7 +12,6 @@ body {
 	background-color: #E8F4EA;
 }
 
-
 /* SIDEBAR */
 .sidebar {
 	width: 10%;}
@@ -122,8 +121,12 @@ body {
 	box-sizing: border-box;
 }
 
-.photo-container:hover .caption, .single-photo-container:hover .caption {
+.photo-container:hover .caption, .single-photo-container:hover .caption, .main .caption {
 	visibility: visible;
+}
+
+.main .caption:hover {
+	background-color: transparent;
 }
 
 .masthead {
@@ -132,6 +135,23 @@ body {
 	margin-bottom: 30px;
 }
 
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+/* Main (index) */
+.main .caption {
+	font-size: 30px;
+	color: black;
+}
 
 /* Travle & Outings */
 .flex-container {
