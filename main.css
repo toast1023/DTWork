@@ -164,3 +164,10 @@ body {
 .travel .caption {
 	background-color: #E8F4EA;
 }
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .photo-container {
+	width: 100%;
+}
