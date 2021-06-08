@@ -3,18 +3,22 @@ body {
 	position: relative;
 	height: auto;
 	min-height: 100% !important;
+	color: #3F3D3D;
 }
 .wellness {
 	background-color: #FFFDF1;
-	color: #3F3D3D;
 }
 .travel {
 	background-color: #E8F4EA;
 }
+.graduation {
+	background-color: #FAF8F8;
+}
 
 /* SIDEBAR */
 .sidebar {
-	width: 10%;}
+	width: 10%;
+}
 
 .content {
 	width: 70%;
@@ -68,11 +72,14 @@ body {
 .yellowlight {
 	/*background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #F5E486 65%);*/
 	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FDDD5C 65%);
-
 }
 
 .greenlight {
 	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #B8D8BE 65%);
+}
+
+.redlight {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FF8776 65%);
 }
 
 .row {
@@ -153,7 +160,7 @@ body {
 	color: black;
 }
 
-/* Travle & Outings */
+/* Travel & Outings */
 .flex-container {
 	display: flex;
 }
@@ -164,6 +171,85 @@ body {
 .travel .caption {
 	background-color: #E8F4EA;
 }
+
+/* Graduation */
+.article-link {
+	text-decoration: none;
+	color: #3F3D3D;
+}
+.article-link:hover {
+	text-decoration: underline;
+}
+.text {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: justify;
+	width: 90%;
+}
+
+/* Slideshow */
+.slideshow {
+	width: 90%;
+	max-width: 1000px;
+	position: relative;
+}
+.slideshow img {
+	width: 100%;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* Media Queries */
 @media only screen and (max-width: 768px) {
   .flex-container {
     flex-direction: column;
