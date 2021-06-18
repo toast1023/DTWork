@@ -12,7 +12,9 @@ body {
 	background-color: #E8F4EA;
 }
 .graduation {
-	background-color: #FAF8F8;
+	/*background-color: #FF8776;*/
+	background-image: url("img/graduation/background1.png");
+	background-repeat: repeat-y;
 }
 
 /* SIDEBAR */
@@ -160,7 +162,8 @@ body {
 
 /* Main (index) */
 .main .caption {
-	font-size: 30px;
+	/*font-size: 30px;*/
+	font-size: 1.8em;
 	color: black;
 }
 
@@ -193,7 +196,10 @@ body {
 .insta-text {
 	margin-bottom: 50px;
 }
-
+.graduation .caption {
+	background-color: rgba(255, 176, 146, 0.5);
+	/*background-image: url("img/graduation/background1.png");*/
+}
 /* Slideshow */
 .slideshow {
 	width: 90%;
