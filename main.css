@@ -190,6 +190,9 @@ body {
 	text-align: justify;
 	width: 90%;
 }
+.insta-text {
+	margin-bottom: 50px;
+}
 
 /* Slideshow */
 .slideshow {
