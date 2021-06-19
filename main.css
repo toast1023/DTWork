@@ -100,6 +100,10 @@ body {
 	width: 30%;
 }
 
+.grad-cover .photo-container {
+	width: 48%;
+}
+
 @media only screen and (max-width: 768px) {
   .photo-container {
     width: 100%;
@@ -200,6 +204,11 @@ body {
 	background-color: rgba(255, 176, 146, 0.5);
 	/*background-image: url("img/graduation/background1.png");*/
 }
+
+.graduation .cover-caption {
+	background-color: rgba(255, 224, 142, 0.8);
+}
+
 /* Slideshow */
 .slideshow {
 	width: 90%;
