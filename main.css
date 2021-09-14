@@ -16,10 +16,16 @@ body {
 	background-image: url("img/graduation/background1.png");
 	background-repeat: repeat-y;
 }
+.food {
+	background-color: #D6EDFF;
+}
 
 /* SIDEBAR */
 .sidebar {
 	width: 10%;
+}
+.sidebar-width{
+	display: block;
 }
 
 .content {
@@ -74,14 +80,22 @@ body {
 .yellowlight {
 	/*background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #F5E486 65%);*/
 	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FDDD5C 65%);
+	padding-top: 2%;
 }
 
 .greenlight {
 	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #B8D8BE 65%);
+	position: relative;
 }
 
 .redlight {
 	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FF8776 65%);
+	position: relative;
+}
+.bluelight {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #70C1FF 65%);
+
+	position: relative;
 }
 
 .row {
@@ -138,7 +152,23 @@ body {
 	box-sizing: border-box;
 }
 
+.Foodcaption {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #a3d4fb;
+	opacity: 90%;
+	padding: 10%;
+	box-sizing: border-box;
+}
+
 .photo-container:hover .caption, .single-photo-container:hover .caption, .main .caption {
+	visibility: visible;
+}
+.slideshow-container:hover .Foodcaption, .single-photo-container:hover .Foodcaption, .main .Foodcaption {
 	visibility: visible;
 }
 
@@ -209,47 +239,6 @@ body {
 	background-color: rgba(255, 224, 142, 0.9);
 }
 
-/* Slideshow */
-.slideshow {
-	width: 90%;
-	max-width: 1000px;
-	position: relative;
-}
-.slideshow img {
-	width: 100%;
-}
-
-/* Hide the images by default */
-.slides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
 /* Caption text */
 .grad-captions {
@@ -263,25 +252,6 @@ body {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
@@ -291,3 +261,4 @@ body {
   .photo-container {
 	width: 100%;
 }
+

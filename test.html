@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini Photo Essays | Daily Trojan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta property="og:type" content="article" />
+    <meta property="og:title" content="Mini Photo Essays | Daily Trojan" />
+    <meta property="og:description" content="The pandemic has changed how we got about our lives and the daily things we do. From the newly created wellness days to going out to having an in-person graduation with safety precautions. Through the mini photo essays, Daily Trojan photographers attempted to capture these differences in our routine." />
+    <meta property="og:image" content="https://nicolengsy.github.io/dt-mini-photo-essays/img/miniphotoessays.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@dailytrojan">
+	<meta name="twitter:title" content="Mini Photo Essays | Daily Trojan">
+	<meta name="twitter:description" content="The pandemic has changed how we got about our lives and the daily things we do. From the newly created wellness days to going out to having an in-person graduation with safety precautions. Through the mini photo essays, Daily Trojan photographers attempted to capture these differences in our routine.">
+	<meta name="twitter:image" content="https://nicolengsy.github.io/dt-mini-photo-essays/img/miniphotoessays.jpg">
+	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<script>
+	(function() {
+
+  init(); //on page load - show first slide, hidethe rest
+
+  function init() {
+
+    parents = document.getElementsByClassName('slideshow-container');
+
+    for (j = 0; j < parents.length; j++) {
+      var slides = parents[j].getElementsByClassName("mySlides");
+      var dots = parents[j].getElementsByClassName("dot");
+      slides[0].classList.add('active-slide');
+      dots[0].classList.add('active');
+    }
+  }
+
+  dots = document.getElementsByClassName('dot'); //dots functionality
+
+  for (i = 0; i < dots.length; i++) {
+
+    dots[i].onclick = function() {
+
+      slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
+
+      for (j = 0; j < this.parentNode.children.length; j++) {
+        this.parentNode.children[j].classList.remove('active');
+        slides[j].classList.remove('active-slide');
+        if (this.parentNode.children[j] == this) {
+          index = j;
+        }
+      }
+      this.classList.add('active');
+      slides[index].classList.add('active-slide');
+
+    }
+  }
+//prev/next functionality
+  links = document.querySelectorAll('.slideshow-container a');
+
+  for (i = 0; i < links.length; i++) {
+    links[i].onclick = function() {
+      current = this.parentNode;
+
+      var slides = current.getElementsByClassName("mySlides");
+      var dots = current.getElementsByClassName("dot");
+      curr_slide = current.getElementsByClassName('active-slide')[0];
+      curr_dot = current.getElementsByClassName('active')[0];
+      curr_slide.classList.remove('active-slide');
+      curr_dot.classList.remove('active');
+      if (this.className == 'next') {
+
+        if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
+          curr_slide.nextElementSibling.classList.add('active-slide');
+          curr_dot.nextElementSibling.classList.add('active');
+        } else {
+          slides[0].classList.add('active-slide');
+          dots[0].classList.add('active');
+        }
+
+      }
+
+      if (this.className == 'prev') {
+
+        if (curr_slide.previousElementSibling) {
+          curr_slide.previousElementSibling.classList.add('active-slide');
+          curr_dot.previousElementSibling.classList.add('active');
+        } else {
+          slides[slides.length - 1].classList.add('active-slide');
+          dots[slides.length - 1].classList.add('active');
+        }
+
+      }
+
+    }
+
+  }
+})();
+	</script>
+</head>
+<body class="food">
+<div class="page-container">
+	<div class="sidebar">
+		<h2 class="page-title"><a href="index.html">Daily Trojan<br>Photo Essays</a></h2>
+		<div class="sidebar-links">
+			<a href="wellness.html">Wellness Day</a>
+			<a href="travel.html">Travel & Outings</a>
+			<a href="graduation.html">Graduation <br></a>
+			<a class="chosen-link bluelight" href="food.html">Foods Missed</a>
+		</div>
+		<div class="sidebar-trademark">
+			<hr>
+			<p>© University of Southern California</p>
+			<p>Daily Trojan 2021</p>
+			<p>All rights reserved.</p>
+		</div>
+	</div>
+	<div class="vertical-line"></div>
+	<div class="content">
+		<h1><mark class="bluelight">Foods Missed</mark></h1>
+		<div class="intro">
+			<p>When USC decided to close its campuses and send students home for the impending lockdown, the loud hum of activity that sounded through the UPC and the HSC quickly subsided. As students swiftly began to evacuate, restaurants in the area began to take the unexpected toll of the nonexistent student body. Most shut their doors to weather the brunt of the pandemic, while some operated through takeout only.</p>
+
+			<p>Returning after more than a year of the pandemic-disrupted student life away from campus, restrictions have lessened, and the once resounding vibrations of a healthy, abundant campus have returned. Students, both new and returning, have experienced the new normalcy of a recovering campus, as they tackle obstacles from scheduling weekly coronavirus tests to finding out where to grab a meal.</p>
+
+			<p>While USC’s dining halls have always been a staple in campus food culture, new restaurants in the Village and other local eateries off campus have served as viable alternatives. Whether it be searching for delicacies such as açai bowls or truffle fries or avoiding the long wait times almost everywhere on campus, these restaurants have continued to stay in the mind of students even through the pandemic.</p>
+
+			<p>Here are some restaurants — Bird’s Nest Cafe, Dulce, Honeybird and It’s Boba Time — that Daily Trojan photographers have continued to return to.</p>
+
+			<p><i>Photos by Talha Rafique, Amaya Cranston, Sasha Ryu and Eli Masket.</i></p>
+			
+		</div>
+
+		<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/food/4734.jpg">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/food/4734.jpg">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/food/4734.jpg">
+    <div class="text">Caption Three</div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/food/4734.jpg">
+    <div class="text">Caption Four</div>
+  </div>
+
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot" ></span>
+  <span class="dot" ></span>
+   <span class="dot"></span>
+</div>
+</div>
+<br>
+
+
+
+
+
+
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/food/4734.jpg">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/food/4734.jpg">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/food/4734.jpg">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" >&#10094;</a>
+  <a class="next">&#10095;</a>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>  
+</div>
+
+
+<br>
+
+		<div class="masthead">
+			<hr>
+			<p>
+			KELLIE CHEN & SIMON PARK, Photo Editors<br>
+			VINCENT LEO, Digital Managing Editor<br>
+			LOIS ANGELO, Associate Managing Editor<br>
+			WILLIAM CHEN, Online Projects Editor<br>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
